@@ -262,10 +262,10 @@ span{
 }
 
 .portfolio-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between the boxes as needed */
 }
 
 .portfolio-container .portfolio-box {
@@ -274,6 +274,15 @@ span{
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
+}
+.portfolio-box {
+    width: 350px; /* Set the desired width */
+    height: 250px; /* Set the desired height */
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
 .portfolio-box img {
