@@ -567,3 +567,9 @@ span{
         margin-top: 2rem;
     }
 }
+p {
+    text-align: justify;
+  }
+  a {
+    font-size: 16px; /* Adjust the font size as needed */
+  }
